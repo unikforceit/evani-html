@@ -1,4 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #717788;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  color: #343c55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: #f2ad48;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ul-li li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-section .top-header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eae1d4;
+}
+.header-section .top-header .contact-info ul li {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #c5c5c5;
+}
+.header-section .top-header .contact-info ul li:last-child {
+  border-right: none;
+}
+.header-section .top-header .contact-info ul li a {
+  font-size: 16px;
+}
+.header-section .top-header .contact-info ul li a i {
+  color: #e25645;
+  margin-right: 8px;
+}
+.header-section .top-header .top-header-right {
+  display: flex;
+  justify-content: end;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.header-section .top-header .top-header-right .currency-lang {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.header-section .top-header .top-header-right .currency-lang select {
+  font-size: 16px;
+  color: #343c55;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+.header-section .top-header .top-header-right .social-icon ul {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.header-section .top-header .top-header-right .social-icon ul li a.fb {
+  color: #3b5998;
+}
+.header-section .top-header .top-header-right .social-icon ul li a.tw {
+  color: #1da1f2;
+}
+.header-section .top-header .top-header-right .social-icon ul li a.ln {
+  color: #0077b5;
+}
+.header-section .top-header .top-header-right .social-icon ul li a.yt {
+  color: #dd4b39;
 }/*# sourceMappingURL=style.css.map */

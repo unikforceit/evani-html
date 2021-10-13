@@ -1,4 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+$body_font: 'Open Sans', sans-serif;
+$heading_font: 'Poppins', sans-serif;
+$theme_color: #f2ad48;
+$body_font_color: #717788;
+$heading_font_color: #343c55;
 *{
     margin: 0;
     padding: 0;
+}
+.container{
+    max-width: 1170px;
+}
+body {
+    font-family: $body_font;
+    font-weight: 400;
+    font-size: 18px;
+    color: $body_font_color;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $heading_font;
+    color: $heading_font_color;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    &:hover{
+        color: $theme_color;
+    }
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+.ul-li li{
+    list-style: none;
+    display: inline-block;
+}
+.header-section{
+    .top-header{
+        padding: 20px 0;
+        border-bottom: 1px solid #eae1d4;
+        .contact-info{
+            ul{
+                li{
+                    margin-right: 15px;
+                    padding-right: 15px;
+                    border-right: 1px solid #c5c5c5;
+                    &:last-child{
+                        border-right: none;
+                    }
+                    a{
+                        font-size: 16px;
+                        i{
+                            color: #e25645;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .top-header-right {
+            display: flex;
+            justify-content: end;
+            column-gap: 30px;
+            .currency-lang {
+                display: flex;
+                column-gap: 30px;
+                select{
+                    font-size: 16px;
+                    color: #343c55;
+                    font-family: $heading_font;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .social-icon{
+                ul{
+                    display: flex;
+                    column-gap: 20px;
+                    li{
+                        a{
+                          &.fb{
+                              color: #3b5998;
+                          }
+                          &.tw{
+                            color: #1da1f2;
+                        }  
+                        &.ln{
+                            color: #0077b5;
+                        }  
+                        &.yt{
+                            color: #dd4b39;
+                        }    
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
